@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!--Necessário para as fontes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*
+        Estilos globais, que não precisam sofrer alteração para as telas.
+        */
+
+        body {
+            height: 100vh;
+            padding: 0;
+            background: linear-gradient(90deg, rgb(51, 45, 156), rgb(6, 141, 168));
+        }
+
+        main {
+            padding-top: 40px;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 60px;
+        }
+
+        a {
+            font-family: 'Arial';
+            text-decoration: none;
+        }
+
+        .center {
+            align-content: center;
+            text-align: center;
+        }
+
+        /*
+        O tamanho das telas para teste você consulta no inspecionar elemento
+        basicamente esses parâmetros aqui configuram X elemento para X até X tamanho.
+        */
+
+        @media only screen and (max-width: 316px) and (min-width: 220px) {
+            /*Abaixo disso aqui nem deve existir celular kjkk*/
+
+            /*
+            Estilos que sofrem alteração pelo tamanho da tela
+            */
+
+            img {
+                width: 200px;
+            }
+
+            .btn {
+                padding: 10px 10px 10px 10px;
+                background-color: white;
+                border-radius: 40px;
+                font-size: 10px;
+                color: rgb(14, 14, 112);
+            }
+        }
+
+        @media only screen and (max-width: 351px) and (min-width: 317px) {
+            img {
+                width: 250px;
+            }
+
+            .btn {
+                padding: 10px 40px 10px 40px;
+                background-color: white;
+                border-radius: 40px;
+                font-size: 18px;
+                color: rgb(14, 14, 112);
+            }
+        }
+
+        @media only screen and (max-width: 800px) and (min-width: 352px) {
+            img {
+                width: 250px;
+            }
+
+            .btn {
+                padding: 10px 40px 10px 40px;
+                background-color: white;
+                border-radius: 40px;
+                font-size: 24px;
+                color: rgb(14, 14, 112);
+            }
+        }
+
+        @media only screen and (min-width: 801px) {
+            img {
+                width: 500px;
+            }
+
+            .btn {
+                padding: 10px 40px 10px 40px;
+                background-color: white;
+                border-radius: 40px;
+                font-size: 24px;
+                color: rgb(14, 14, 112);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!--Conteúdo-->
+        <div class="center">
+            <img src="https://cdn.glitch.global/e3790b73-514c-45b3-a987-85c9a4b7481f/d%20walt%20logo%20nova.svg?v=1644971753268"
+                alt="Logo da Empresa">
+            <!--Botões-->
+            <li>
+                <!--Pra mudar o ícone é só ir no "fa fa-nomeicone"-->
+                <a class="btn" href="https://"><i class="fa fa-whatsapp"></i> Whatsapp</a>
+            </li>
+            <li>
+                <a class="btn" href="https://"><i class="fa fa-facebook"></i> Facebook</a>
+            </li>
+            <li>
+                <a class="btn" href="https://"><i class="fa fa-link"></i> Website</a>
+            </li>
+        </div>
+    </main>
+    <footer>
+        <div class="center">
+            <!--Marca dagua-->
+            <a href="https://agenciagenios.com" style="color: white;">By Gênios Publicidade</a>
+        </div>
+    </footer>
+</body>
+
+</html>
